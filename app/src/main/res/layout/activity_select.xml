@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.sample.janken_ver211.SelectActivity">
+
+
+    <ImageButton
+        android:id="@+id/left"
+        android:src="@drawable/guu"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_alignTop="@+id/center"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:scaleType="centerCrop"
+        />
+
+    <ImageButton
+        android:id="@+id/center"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/choki"
+        android:scaleType="centerCrop"
+        />
+
+    <ImageButton
+        android:id="@+id/right"
+        android:src="@drawable/paa"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@+id/center"
+        android:layout_centerVertical="true"
+        android:layout_margin="50px"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:id="@+id/win"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:text="勝利数：0" />
+
+    <TextView
+        android:id="@+id/lose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/win"
+        android:text="敗北数：0" />
+
+    <TextView
+        android:id="@+id/percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lose"
+        android:text="勝率：0％" />
+
+
+</RelativeLayout>

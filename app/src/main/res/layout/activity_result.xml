@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/you"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="あなたはX"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="108dp"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="結果"
+        tools:layout_editor_absoluteX="178dp"
+        tools:layout_editor_absoluteY="59dp"
+        android:layout_below="@+id/guideline"
+        android:layout_centerHorizontal="true"
+        android:textColor="#f5c900"
+        android:textSize="30sp"
+        android:layout_marginTop="69dp" />
+
+    <TextView
+        android:id="@+id/my"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="私はY"
+        tools:layout_editor_absoluteX="174dp"
+        tools:layout_editor_absoluteY="154dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/you"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="あなたの勝ち！"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="222dp"
+        android:textSize="30sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="続けてじゃんけんする"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="337dp"
+        android:layout_marginTop="51dp"
+        android:layout_below="@+id/result_text"
+        android:layout_centerHorizontal="true" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        app:layout_constraintGuide_begin="20dp"
+        android:orientation="vertical" />
+
+    <TextView
+        android:id="@+id/win"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:text="勝利数：0" />
+
+    <TextView
+        android:id="@+id/lose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/win"
+        android:text="敗北数：0" />
+
+    <TextView
+        android:id="@+id/percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lose"
+        android:text="勝率：0％" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="保存する"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnNext"/>
+
+</RelativeLayout>
